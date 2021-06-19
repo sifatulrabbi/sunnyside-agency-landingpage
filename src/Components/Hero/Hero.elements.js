@@ -7,10 +7,7 @@ export const HeroContainer = styled(Container)`
    height: auto;
    overflow: hidden;
 
-   @media screen and (max-width: 900px) {
-   }
-
-   ${Container};
+   ${Container}
 `
 
 export const HeroTitle = styled.h1`
@@ -22,8 +19,14 @@ export const HeroTitle = styled.h1`
    letter-spacing: 8px;
 
    position: absolute;
-   width: max-content;
+   text-align: center;
+   width: 100%;
    top: 30%;
    left: 50%;
    transform: translateX(-50%);
+
+   @media screen and (max-width: 900px) {
+      font-size: 2rem;
+      width: 100%;
+   }
 `

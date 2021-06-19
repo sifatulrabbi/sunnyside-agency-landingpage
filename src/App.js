@@ -1,5 +1,6 @@
 import React from 'react'
-import { Navbar, Hero } from './Components'
+import { Navbar } from './Components'
+import { Home } from './Pages'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import GlobalStyles from './GlobalStyles'
 
@@ -8,9 +9,8 @@ export default function App() {
       <BrowserRouter>
          <GlobalStyles />
          <Navbar />
-         <Hero />
          <Switch>
-            <Route exact to='/' />
+            <Route exact to='/' component={Home} />
          </Switch>
       </BrowserRouter>
    )

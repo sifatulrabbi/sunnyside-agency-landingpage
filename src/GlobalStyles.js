@@ -26,7 +26,7 @@ const GlobalStyles = createGlobalStyle`
 
 export const Container = styled.section`
    max-width: 100vw;
-   width: 100%;
+   min-width: 100%;
    height: max-content;
    display: flex;
    justify-items: center;
@@ -39,8 +39,6 @@ export const LogoName = styled.h1`
    font-family: ${StyleData.font.family.accent};
    display: inline-block;
    padding: 10px;
-   padding-left: 0;
-   margin: 10px;
    margin-left: 0;
    color: ${({ footerLogo }) => (footerLogo ? `${StyleData.colors.cyan.de_cyan}` : 'white')};
    cursor: pointer;
@@ -54,6 +52,7 @@ export const Button = styled.button`
    border-radius: 40px;
    font-family: ${StyleData.font.family.accent};
    font-size: 0.9rem;
+   text-transform: uppercase;
    cursor: pointer;
    transition: 200ms ease-in-out;
 
@@ -66,6 +65,8 @@ export const Button = styled.button`
 export const Image = styled.img`
    width: 100%;
    height: auto;
+   min-height: 400px;
+   min-width: 425px;
 `
 
 export default GlobalStyles

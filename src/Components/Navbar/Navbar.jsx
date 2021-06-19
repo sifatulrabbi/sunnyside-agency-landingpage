@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import { NavContainer, NavMenu, NavItem, NavBtn, Triangle, HamMenu } from './Navbar.elements'
-import { LogoName } from '../../GlobalStyles'
 import { AiFillCaretLeft, AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { IconContext } from 'react-icons/lib'
+import Logo from '../Logo/Logo'
 
 const Navbar = () => {
    const [show, setShow] = useState(false)
@@ -13,7 +13,7 @@ const Navbar = () => {
 
    return (
       <NavContainer>
-         <LogoName>sunnyside</LogoName>
+         <Logo />
 
          <HamMenu onClick={handleHamClick}>
             <IconContext.Provider value={{ style: { width: '30px', height: 'auto', color: 'white' } }}>

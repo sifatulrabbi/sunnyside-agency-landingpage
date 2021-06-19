@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Hero, InfoSection, DesignSection } from '../../Components'
+import { Hero, InfoSection, DesignSection, ReviewSection } from '../../Components'
 import { Data } from './Home.data'
 
 function Home() {
@@ -38,6 +38,7 @@ function Home() {
             />
          ))}
          <DesignSection data={Data.DesignSection} isMobile={isMobile} />
+         <ReviewSection clients_data={Data.clients} />
       </>
    )
 }

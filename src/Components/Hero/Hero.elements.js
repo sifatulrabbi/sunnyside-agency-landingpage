@@ -30,3 +30,11 @@ export const HeroTitle = styled.h1`
       width: 100%;
    }
 `
+
+export const DownArrow = styled.img`
+   z-index: 5;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, 0);
+`

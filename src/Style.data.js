@@ -10,7 +10,7 @@ const StyleData = {
       },
 
       cyan: {
-         mod_cyan: 'hsl(168, 34%, 41%)', //footer
+         mod_cyan: 'hsl(168, 34%, 51%)', //footer
          de_cyan: 'hsl(167, 40%, 24%)', //graphic design text
       },
 

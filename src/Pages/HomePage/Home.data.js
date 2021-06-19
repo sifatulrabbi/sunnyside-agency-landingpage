@@ -12,6 +12,7 @@ export const Data = {
          color_red: false,
          reverse: false,
       },
+
       {
          id: '0002',
          title: 'Stand out to the right audience',
@@ -23,6 +24,7 @@ export const Data = {
          reverse: true,
       },
    ],
+
    DesignSection: [
       {
          id: '0003',
@@ -33,6 +35,7 @@ export const Data = {
          image_mbl: require('../../images/mobile/image-graphic-design.jpg').default,
          color_cyan: true,
       },
+
       {
          id: '0004',
          title: 'Photography',
@@ -41,6 +44,32 @@ export const Data = {
          image_dsk: require('../../images/desktop/image-photography.jpg').default,
          image_mbl: require('../../images/mobile/image-photography.jpg').default,
          color_cyan: false,
+      },
+   ],
+
+   clients: [
+      {
+         id: '01011',
+         name: 'Emily R.',
+         title: 'Marketing Director',
+         message:
+            'We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.',
+         image: require('../../images/image-emily.jpg').default,
+      },
+      {
+         id: '01012',
+         name: 'Thomas S.',
+         title: 'Chief Operating Officer',
+         message:
+            'Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.',
+         image: require('../../images/image-thomas.jpg').default,
+      },
+      {
+         id: '01013',
+         name: 'Jennie F.',
+         title: 'Business Owner',
+         message: 'Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!',
+         image: require('../../images/image-jennie.jpg').default,
       },
    ],
 }
